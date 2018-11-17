@@ -1,0 +1,107 @@
+    Scanner sc = new Scanner(System.in);
+        int m;
+        int i;
+       
+
+        System.out.println("how many lines");
+
+        m = sc.nextInt();
+     Random rand1 = new Random();
+        int j;
+
+        for (i = 0; i < m; i++) {
+            int a =rand1.nextInt(10);
+        
+
+           
+           
+            for (j = 0; j < 9; j++) {
+            
+                if(j==a){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print("-");
+                }     
+                
+            }
+             System.out.println(" ");
+        }}}
+    
+
+output
+
+---*----- 
+----*---- 
+--*------ 
+--*------  to print * randomly
+
+
+//////////////////////////////////////////////////
+int m;
+      int i;
+      int location =-1;
+        System.out.println("how many elements");
+        Scanner sc = new Scanner(System.in);
+         m = sc.nextInt();
+        int [] numbers = new int [m];
+        
+        System.out.print("random numbers are :");
+        System.out.println(" ");
+        Random rand1 = new Random();
+        int c = rand1.nextInt(1000);
+        for (i=0;i<m;i++)
+        {
+            
+              c = rand1.nextInt(1000);
+              numbers[i]=c;
+            System.out.println( i+1+ ":"+ c);
+      
+        }  
+       
+       System.out.println("which number to search");
+        int b = sc.nextInt();
+       for(i=0;i<m;i++){
+         if(numbers[i]==b)
+           {
+          
+               location=i+1;
+           }
+       }
+       if(-1==location)
+       {
+          
+             System.out.print("value not found");
+         }
+         else
+                   {
+               System.out.println(" value found at" +location);
+           }
+        }
+    }
+//////////////////////output//////////
+
+how many elements
+5
+random numbers are : 
+1:801
+2:707
+3:29
+4:712
+5:485
+which number to search
+485
+ value found at5
+
+
+
+
+
+
+
+
+
+
+
+
+
